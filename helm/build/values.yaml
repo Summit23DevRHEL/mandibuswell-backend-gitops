@@ -1,0 +1,15 @@
+app:
+  name: poi-backend-app
+  namespace: mandibuswell
+  cluster: .apps.summit23-dr.w6gk.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/Summit23DevRHEL/mandibuswell-backend
+  org: Summit23DevRHEL
+  name: mandibuswell-backend
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: mandibuswell/poi-backend-app
+  tag: latest
